@@ -1,0 +1,32 @@
+{
+  "name": "hero_check",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress open": "node_modules\\.bin\\cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "@testing-library/cypress": "^8.0.2",
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
+    "browserify": "^17.0.0",
+    "cucumber": "^6.0.7",
+    "cypress": "^9.6.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "resolve": "^1.22.0",
+    "tsify": "^5.0.4",
+    "typescript": "^4.6.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "cucumber.json": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber.json",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}
